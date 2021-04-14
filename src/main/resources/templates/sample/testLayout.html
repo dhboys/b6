@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{/layout/layout1.html :: setMain(~{this::header},~{this::main})}">
+
+  <div th:fragment="header">
+    <h1>My Page</h1>
+    <h1>My My</h1>
+  </div>
+
+  <div th:fragment="main">
+    <h1>My Page</h1>
+    <h1>My My</h1>
+  </div>
+
+</th:block>
